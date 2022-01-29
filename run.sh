@@ -1,3 +1,5 @@
+docker build -t python-web3 . 
+&&
 docker run          \
 --rm                \
 -it                 \
