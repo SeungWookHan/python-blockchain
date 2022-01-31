@@ -1,4 +1,4 @@
-docker run          \
+docker build -t python-web3 . && docker run          \
 --rm                \
 -it                 \
 -v $(pwd):/app  \
