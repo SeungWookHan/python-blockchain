@@ -4,3 +4,13 @@ services:
     image: trufflesuite/ganache-cli
     ports:
       - 8545:8545
+  
+  python:
+    build: .
+    image: python-web3
+    container_name: python-web3
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    working_dir: /app
+    volumes:
+      - ./:/app
